@@ -1,0 +1,271 @@
+@font-face {
+    font-family: 'GlyphWorld';
+    src: url('../fonts/Glyphworld/GlyphWorld-AnimalSoul.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'Authentic Sans';
+    src: url('../fonts/AUTHENTIC SANS 190226/OTF/AUTHENTICSans-60.otf') format('otf');
+    src:url('../fonts/AUTHENTIC SANS 190226/OTF/AUTHENTICSans-60.woff') format('woff');
+    src:url('../fonts/AUTHENTIC SANS 190226/OTF/AUTHENTICSans-60.woff2') format('woff2');
+    font-weight:normal;
+    font-style:normal;
+    font-family:'apoc Trial';
+    src: url('../fonts/Apoc-Full-Family-Trial-Version/ApocTrial-RevelationsItalic.otf') format('otf');
+    src: url('../fonts/Apoc-Full-Family-Trial-Version/ApocTrial-RevelationsItalic.woff') format('woff');
+    font-style: Italic;
+    font-weight: normal;
+
+  }
+
+html{
+scroll-behavior: smooth;
+}
+
+body{
+  background-color:white;
+  color: #c9f288;
+  font-family: 'apoc trial';
+  font-size:200%;
+}
+
+#dropdown{
+  position:relative;
+  text-align: center;
+  margin-left:45vh;
+  visibility: visible;
+  background-color:chartreuse;
+  color:white;
+  cursor:pointer;
+  z-index:50;
+}
+
+@keyframes rotate {
+    0% {
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+
+    }
+
+    70% {
+        -moz-transform: rotate(-360deg);
+        -webkit-transform: rotate(-360deg);
+        -o-transform: rotate(-360deg);
+        -ms-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+    }
+
+    100%{ -moz-transform: rotateY(90deg);
+        -webkit-transform: rotateY(90deg);
+        -o-transform: rotateY(90deg);
+        -ms-transform: rotateY(90deg);
+        transform: rotateY(90deg);
+
+    }
+}
+
+.desktop_visible {
+  display: block;
+}
+
+.mobile_visible {
+  display: none;
+}
+
+@media screen and (max-width: 376px) {
+body,html{
+  background-color:white;
+  color: #c9f288;
+  font-family: 'apoc trial';
+  font-size:2em;
+}
+
+
+.desktop_visible {
+  display: none;
+  visibility:hidden;
+}
+
+.mobile_visible {
+  display: block;
+}
+
+}
+
+a:link, a:visited{
+  text-decoration:none;
+  color:#c9f288;
+}
+
+#container{
+  height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+#1{
+  position:fixed;
+  top:0;
+  left:0;
+  visibility:hidden;
+  z-index:-4;
+  height:100vh;
+  border: solid red 2px;
+}
+
+#about, #about_p{
+  color:papayawhip;
+  font-family: 'apoc trial';
+  font-size: 110%;
+  width:30%;
+  padding: 2%;
+}
+
+#me{
+  width: 50%;
+  padding: 2%;
+  overflow-x:hidden;
+  overflow-y:scroll;
+
+}
+
+#walking{
+  width:20%;
+}
+
+
+#menu{
+  display:inline-block;
+  position:fixed;
+  left:1.5em;
+  top:6em;
+  z-index:40;
+}
+
+#cabbage{
+  display:inline-block;
+  position:fixed;
+  top:0;
+  left:0em;
+  z-index:3;
+}
+#grabbag{
+  position: relative;
+  z-index:4;
+  margin-top:0px;
+}
+
+#wands{
+  position:relative;
+  margin-left:90px;
+  z-index:-2;
+}
+#descriptions{
+  font-family:'Authentic Sans';
+  position:relative;
+  z-index:5;
+  color:#61070f;
+  font-size:20px;
+  columns:3;
+  padding:50px;
+  width:100%;
+  height:30%;
+}
+#diary{
+  position:relative;
+  padding-right:30px;
+}
+
+#vdb{
+  position:relative;
+  z-index:-3;
+}
+.parent {
+  display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(15, calc(50% - 40px));
+    grid-template-rows: minmax(150px, 1fr);
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 1 / 2 / 2 / 3;cursor:pointer;}
+.div3 { grid-area: 1 / 3 / 2 / 4; }
+.div4 { grid-area: 1 / 4 / 2 / 5; }
+.div5 { grid-area: 1 / 5 / 2 / 6; }
+.div6{ grid-area: 1/ 6 / 2 / 7;}
+
+#toTop{
+  color:#61070f;
+  font-family:ApocTrial;
+  position: fixed;
+        bottom: 10px;
+        right: 10px;
+        z-index: 99;
+        background: transparent;
+        font-size:25px;
+        border-radius: 30px;
+        padding: 15px;
+      border-color:transparent;
+}
+
+#horizontal{
+  color:#61070f;
+  position: fixed;
+        bottom: 75px;
+        right: 10px;
+        z-index: 99;
+        background: transparent;
+        font-size:20px;
+        border-radius: 50px;
+        padding: 15px;
+        border-color:transparent;
+}
+
+#threeof{
+  position:absolute;
+  margin-left:30em;
+  margin-top:35em;
+  width:900px;
+}
+
+.text{
+  columns:2;
+  height:600px;
+}
+
+.wandsimg{
+  width:80%;
+  height:auto;
+}
+
+
+#blessings{
+  position:absolute;
+  margin-top:150em;
+  margin-left:10em;
+  margin-bottom:20em;
+}
+
+iframe{
+  width:850px;
+  height: 1200px;
+  margin-bottom:10em;
+}
+/*ABOUT PAGE*/
+
+#truly_p{
+cursor:pointer;
+color: chartreuse;
+}
+
+#twitter:hover{
+  color:limegreen;
+}
+
+#futuresex{
+  position:relative;
+  z-index:7;
+}
